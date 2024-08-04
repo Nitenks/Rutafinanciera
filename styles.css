@@ -553,12 +553,6 @@ header.jumbotron .btn-primary:hover {
     position: relative; /* Añadido para controlar el contenido interno */
 }
 
-/* Media Query para dispositivos móviles */
-@media (max-width: 768px) {
-    .parallax {
-        height: 300px; /* Ajusta la altura para dispositivos móviles */
-    }
-}
 
 
 /* Estilos para el footer */
