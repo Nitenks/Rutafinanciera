@@ -466,7 +466,7 @@ iframe {
 /* Header Section Styles */
 header.jumbotron {
     background: url('fondo1.jpeg') no-repeat center center;
-    background-size: cover;
+    background-size: contain;
     color: white;
     padding: 150px 0;
     position: relative;
