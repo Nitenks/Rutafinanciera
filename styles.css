@@ -545,12 +545,21 @@ header.jumbotron .btn-primary:hover {
 
 /* Parallax Section Styles */
 .parallax {
-    background-image: url('fondoxd.jpeg');
-    height: 500px;
+    background-image: url('FONDO/FOOTER.JPG');
+    height: 500px; /* Altura inicial */
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    position: relative; /* Añadido para controlar el contenido interno */
 }
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+    .parallax {
+        height: 300px; /* Ajusta la altura para dispositivos móviles */
+    }
+}
+
 
 /* Estilos para el footer */
 .footer {
