@@ -1,0 +1,713 @@
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Fondo Global Gradiente */
+body {
+    background: linear-gradient(to bottom, #0f0c29, #302b63); /* Degradado de arriba hacia abajo */
+    color: #ffffff; /* Color del texto global */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para la sección de contacto */
+#contact {
+    background: linear-gradient(to bottom right, #302b63, #0f0c29); /* Gradiente de fondo */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+#contact h2 {
+    color: #8ae2fe; /* Color de texto para el título */
+}
+
+.contact-info {
+    background: linear-gradient(to bottom right, #ffffff, #f0f0f5); /* Gradiente de fondo para la información de contacto */
+    padding: 1.5rem;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.contact-info h4 {
+    margin-bottom: 0.5rem;
+    color: #8ae2fe; /* Color de los encabezados */
+}
+
+.contact-info p {
+    margin: 0;
+    color: #333; /* Color del texto */
+}
+
+.contact-info i {
+    color: #8ae2fe; /* Color de los íconos */
+    margin-right: 10px;
+}
+
+.contact-info a {
+    color: #8ae2fe; /* Color de los enlaces */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Subrayado en hover */
+}
+
+.form-control {
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.btn-primary {
+    background: linear-gradient(to right, #8ae2fe, #c19ef7); /* Gradiente de fondo para botones */
+    border: none;
+    color: #fff; /* Color del texto del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(to right, #c19ef7, #8ae2fe); /* Efecto de hover */
+    transform: scale(1.05);
+}
+
+@media (max-width: 576px) {
+    .form-group {
+        margin-bottom: 1rem; /* Espaciado adecuado en pantallas pequeñas */
+    }
+    
+    .btn-primary {
+        padding: 0.75rem; /* Ajustar padding para botones en pantallas pequeñas */
+    }
+}
+
+
+
+.zoom-effect {
+    transition: transform 0.3s ease;
+}
+.zoom-effect:hover {
+    transform: scale(1.1);
+}
+.rectangle-container {
+    background: #f8f9fa; /* Fondo por defecto, puede cambiarse si se quiere un color base diferente */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.rectangle-container:hover {
+    transform: scale(1.05);
+}
+
+.rectangle-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.rectangle-text {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.rectangle-detail {
+    display: none;
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+.rectangle-container:hover .rectangle-detail {
+    display: block;
+}
+
+/* Estilos específicos para cada sección */
+.rectangle-container.mission {
+    background: linear-gradient(to bottom right, #24243e, #8ae2fe); /* Gradiente para Misión */
+}
+
+.rectangle-container.vision {
+    background: linear-gradient(to bottom right, #302b63, #c19ef7); /* Gradiente para Visión */
+}
+
+.rectangle-container.purpose {
+    background: linear-gradient(to bottom right, #0f0c29, #8ae2fe); /* Gradiente para Propósito */
+}
+
+/* Estilos para las tarjetas de podcast */
+.podcast-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.podcast-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* Mantener una proporción cuadrada */
+    overflow: hidden;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.podcast-card .card-body {
+    padding: 1rem;
+    background-color: #f9f9f9;
+}
+
+.podcast-card .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.podcast-card .card-text {
+    font-size: 14px;
+    color: #666;
+}
+
+
+
+.card {
+    background: linear-gradient(to bottom right, #24243e, #3a71a9); /* Gradiente aplicado a todas las tarjetas */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-body {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color:whitesmoke
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color:whitesmoke
+}
+
+.card .card-detail {
+    display: none;
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+.card:hover .card-detail {
+    display: block;
+}
+
+/* Estilos específicos para los podcasts */
+.podcast-card:nth-child(1) {
+    background: linear-gradient(to bottom right, #24243e, #8ae2fe); /* Gradiente para el primer podcast */
+}
+
+.podcast-card:nth-child(2) {
+    background: linear-gradient(to bottom right, #302b63, #c19ef7); /* Gradiente para el segundo podcast */
+}
+
+.podcast-card:nth-child(3) {
+    background: linear-gradient(to bottom right, #0f0c29, #8ae2fe); /* Gradiente para el tercer podcast */
+}
+
+.iframe-container {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+iframe {
+    width: 100%;
+    height: 200px;
+    border: 0;
+}
+    
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.btn-secondary {
+    background-color: #28a745;
+    border-color: #28a745;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+@media (max-width: 576px) {
+    .card-body {
+        padding: 1rem;
+    }
+}
+
+/* Estilo para la sección de redes sociales */
+#social-media {
+    padding: 60px 0;
+}
+
+/* Estilo base para los íconos de redes sociales */
+.social-icon {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to bottom right, #24243e, #3a71a9); /* Gradiente aplicado a todos los íconos */
+}
+
+.social-icon i {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.social-icon h5 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Estilo para los íconos de redes sociales */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+/* Estilo para el ícono de YouTube */
+.youtube-icon {
+    background: linear-gradient(to bottom right, #8ae2fe, #c19ef7); /* Gradiente personalizado para YouTube */
+}
+
+.youtube-icon:hover {
+    background: linear-gradient(to bottom right, #ff4444, #ff0000); /* Efecto de hover */
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para el ícono de Instagram */
+.instagram-icon {
+    background: linear-gradient(to bottom right, #ffdc80, #fcb045); /* Gradiente personalizado para Instagram */
+}
+
+.instagram-icon:hover {
+    background: linear-gradient(to bottom right, #fcb045, #d62477); /* Efecto de hover */
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para el ícono de Twitter */
+.twitter-icon {
+    background: linear-gradient(to bottom right, #1da1f2, #1a91da); /* Gradiente personalizado para Twitter */
+}
+
+.twitter-icon:hover {
+    background: linear-gradient(to bottom right, #1a91da, #187bcd); /* Efecto de hover */
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+/* Estilo para el ícono de Facebook */
+.facebook-icon {
+    background: linear-gradient(to bottom right, #3b5998, #8b9dc3); /* Gradiente personalizado para Facebook */
+    color: white; /* Color del ícono */
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.facebook-icon:hover {
+    background: linear-gradient(to bottom right, #8b9dc3, #3b5998); /* Efecto de hover */
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para el ícono de Spotify */
+.spotify-icon {
+    background: linear-gradient(to bottom right, #1db954, #1ed760); /* Gradiente personalizado para Spotify */
+    color: white; /* Color del ícono */
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.spotify-icon:hover {
+    background: linear-gradient(to bottom right, #1ed760, #1db954); /* Efecto de hover */
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Animación de entrada */
+.fadeInUp {
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos para el Navbar */
+.navbar {
+    background: linear-gradient(to right, #302b63, #0f0c29); /* Gradiente de fondo para el navbar */
+    border-bottom: 1px solid #8ae2fe; /* Línea inferior en cian brillante */
+}
+
+.navbar-brand img {
+    max-height: 30px; /* Ajustar el tamaño del logo */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff; /* Color blanco para los enlaces de navegación */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #8ae2fe; /* Color cian brillante para los enlaces al pasar el ratón */
+}
+
+.navbar-toggler {
+    border: none; /* Quitar borde del botón de toggler */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCAxMDAgNTAiIHhtbG5zPSJodHRwOi8vd3d3Lnd3dy53My5vcmcvMjAwMC9zdmciIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLXdpZHRoPSI1IiBzdHJva2UtbGluZWNhcD0ibm9uZSI+PHBhdGggZD0iTTAgMCAwIDUwdjAiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLXdpZHRoPSI1IiBzdHJva2UtbGluZWNhcD0ibm9uZSIvPjxwYXRoIGQ9Ik0wIDB2NTAgMCAwIDB6Ii8+PC9zdmc+"); /* Icono del toggler */
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #8ae2fe; /* Color cian brillante para el enlace activo */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: #d3d3d3 !important; /* Color en hover */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+.navbar-nav .nav-link.active {
+    border-bottom: 2px solid #d3d3d3;
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+.navbar-nav {
+    align-items: center;
+}
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-nav .nav-link {
+        padding: 8px 10px;
+    }
+}
+
+/* Efecto de transición para el fondo del navbar en scroll */
+.navbar.scrolled {
+    background-color: #162a45; /* Cambiar el fondo cuando se hace scroll */
+    transition: background-color 0.3s ease;
+}
+
+
+/* Header Section Styles */
+header.jumbotron {
+    background: url('fondo1.jpeg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 150px 0;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header.jumbotron::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+header.jumbotron .container {
+    position: relative;
+    z-index: 2;
+}
+
+header.jumbotron h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+header.jumbotron p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+header.jumbotron .btn-primary {
+    background-color: #ff6f61;
+    border-color: #ff6f61;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+header.jumbotron .btn-primary:hover {
+    background-color: #e55b4e;
+    border-color: #e55b4e;
+}
+
+/* Parallax Section Styles */
+.parallax {
+    background-image: url('FONDO/FOOTER.JPG');
+    height: 500px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Estilos para el footer */
+.footer {
+    background: linear-gradient(to bottom right, #302b63, #0f0c29); /* Gradiente de fondo */
+    color: #8ae2fe; /* Color del texto */
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Sombra para separar del contenido superior */
+}
+
+.footer a {
+    color: #c19ef7; /* Color de los enlaces */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #8ae2fe; /* Efecto de hover para los enlaces */
+}
+
+.footer i {
+    color: #c19ef7; /* Color del ícono */
+    margin-left: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer i:hover {
+    color: #8ae2fe; /* Efecto de hover para el ícono */
+    transform: scale(1.2);
+}
+
+
+/* Button Styles */
+.btn-primary {
+    background-color: #1e3a5f;
+    border-color: #1e3a5f;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #162a45;
+}
+
+.btn-outline-primary {
+    color: #1e3a5f;
+    border-color: #1e3a5f;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.btn-outline-primary:hover {
+    background-color: #1e3a5f;
+    color: #ffffff;
+}
+
+.btn-outline-danger {
+    color: #1e3a5f;
+    border-color: #1e3a5f;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.btn-outline-danger:hover {
+    background-color: #1e3a5f;
+    color: #ffffff;
+}
+
+.btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1e3a5f;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-back-to-top:hover {
+    background-color: #162a45;
+}
+
+
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    background-color: #1e3a5f; /* Color del botón */
+    color: white; /* Color del texto */
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Agrega una sombra para resaltar el botón */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves para el color de fondo y sombra */
+}
+
+#scrollToTopBtn:hover {
+    background-color: #0056b3; /* Color del botón al pasar el mouse */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Sombra más pronunciada al pasar el mouse */
+}
+
+
+
+/* Estilo para la sección de invitación al podcast */
+#join-podcast {
+    
+    padding: 40px 0;
+    border-radius: 8px;
+}
+
+.podcast-card {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.podcast-card .card-body {
+    padding: 30px;
+}
+
+.podcast-card .card-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #343a40;
+}
+
+.podcast-card .card-text {
+    font-size: 1rem;
+    color: #495057;
+}
+
+.benefits-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.benefits-list li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #495057;
+}
+
+.btn-primary {
+    background-color: #1e3a5f;
+    border-color: #1e3a5f;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+#team {
+    background: url('fondo2.jpeg') no-repeat center center;
+    background-size: cover;
+    color: #e3dfdf; /* Aseguramos que el texto sea legible sobre el fondo oscuro */
+    padding: 50px 20px; /* Añade algo de padding para espacio visual */
+    border-radius: 10px; /* Opcional: bordes redondeados para un look moderno */
+}
+
+
+
+
