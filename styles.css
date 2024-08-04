@@ -521,26 +521,7 @@ header.jumbotron .btn-primary:hover {
     border-color: #e55b4e;
 }
 
-/* Media Query para dispositivos móviles */
-@media (max-width: 768px) {
-    header.jumbotron {
-        padding: 70px 0;
-        height: auto; /* Ajusta la altura para móviles */
-    }
 
-    header.jumbotron h1 {
-        font-size: 2rem;
-    }
-
-    header.jumbotron p {
-        font-size: 1rem;
-    }
-
-    header.jumbotron .btn-primary {
-        padding: 10px 20px;
-        font-size: 1rem;
-    }
-}
 
 
 /* Parallax Section Styles */
