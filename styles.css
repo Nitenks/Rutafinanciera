@@ -6,6 +6,7 @@ html {
 }
 .container-fluid {
     overflow-x: hidden;
+    max-width: 100%;
 
 }
 
