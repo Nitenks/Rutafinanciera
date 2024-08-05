@@ -526,13 +526,37 @@ header.jumbotron .btn-primary:hover {
 
 /* Parallax Section Styles */
 .parallax {
-    background-image: url('fondoxd.jpeg');
+    background-image: url('FONDO/FOOTER.JPG');
     height: 500px; /* Altura inicial */
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     position: relative; /* Añadido para controlar el contenido interno */
 }
+
+/* Ajustes de contenido */
+#about .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+    .parallax {
+        background-attachment: scroll; /* Deshabilita el efecto parallax en móviles */
+        height: auto; /* Ajusta la altura para dispositivos móviles */
+        background-size: contain; /* Ajusta el tamaño de la imagen */
+    }
+    
+    #about .container {
+        padding: 20px; /* Ajusta el padding en dispositivos móviles */
+    }
+    
+    .section-text {
+        font-size: 1.2rem; /* Ajusta el tamaño de la fuente para móviles */
+    }
+}
+
 
 
 
