@@ -742,6 +742,40 @@ header.jumbotron .btn-primary:hover {
     padding: 50px 20px; /* Añade algo de padding para espacio visual */
     border-radius: 10px; /* Opcional: bordes redondeados para un look moderno */
 }
+/* Estilos del botón para subir */
+.back-to-top {
+    position: fixed;
+    bottom: 20px; /* Ajusta la distancia desde el fondo */
+    right: 20px; /* Ajusta la distancia desde la derecha */
+    width: 50px; /* Ancho del botón */
+    height: 50px; /* Altura del botón */
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    text-align: center;
+    line-height: 50px; /* Centra el texto verticalmente */
+    border-radius: 50%; /* Hace el botón redondo */
+    font-size: 24px; /* Tamaño del texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra del botón */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+    z-index: 1000; /* Asegura que el botón esté sobre otros elementos */
+}
+
+.back-to-top:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el ratón */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el ratón */
+}
+
+/* Asegura que el botón no aparezca en pantallas pequeñas */
+@media (max-width: 576px) {
+    .back-to-top {
+        width: 40px; /* Ajusta el tamaño en pantallas pequeñas */
+        height: 40px;
+        line-height: 40px;
+        font-size: 18px;
+        bottom: 15px; /* Ajusta la distancia desde el fondo en pantallas pequeñas */
+        right: 15px; /* Ajusta la distancia desde la derecha en pantallas pequeñas */
+    }
+}
 
 
 
