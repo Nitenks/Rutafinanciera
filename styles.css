@@ -2,7 +2,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 70px; /* Ajusta según la altura de tu navbar */
+    scroll-padding-top: 100px; /* Ajusta según la altura de tu navbar */
     
 }
 .container-fluid {
