@@ -782,11 +782,13 @@ header.jumbotron .btn-primary:hover {
     border-radius: 10px; /* Opcional: bordes redondeados para un look moderno */
 }
 
-#team img {
+.ceo-img {
     width: 100px; /* Ajusta este valor para hacer el círculo más pequeño */
     height: 100px; /* Asegúrate de que el ancho y alto sean iguales para mantener el círculo */
     border-radius: 50%; /* Esto crea el efecto de círculo */
     object-fit: cover; /* Asegura que la imagen se ajuste correctamente dentro del círculo */
+}
+
 }
 
 /* Estilos del botón para subir */
