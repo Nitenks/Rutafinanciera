@@ -587,7 +587,6 @@ header.jumbotron .btn-primary:hover {
 /* Media Query para dispositivos móviles */
 @media (max-width: 768px) {
     .parallax {
-        background-attachment: scroll; /* Deshabilita el efecto parallax en móviles */
         height: auto; /* Ajusta la altura para dispositivos móviles */
         background-size: contain; /* Ajusta el tamaño de la imagen */
     }
