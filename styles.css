@@ -32,7 +32,7 @@ body {
 }
 
 #contact h2 {
-    color: #8ae2fe; /* Color de texto para el título */
+    color: #3575ce; /* Color de texto para el título */
 }
 
 .contact-info {
@@ -44,7 +44,7 @@ body {
 
 .contact-info h4 {
     margin-bottom: 0.5rem;
-    color: #8ae2fe; /* Color de los encabezados */
+    color: #115569; /* Color de los encabezados */
 }
 
 .contact-info p {
@@ -53,12 +53,12 @@ body {
 }
 
 .contact-info i {
-    color: #8ae2fe; /* Color de los íconos */
+    color: #273f46; /* Color de los íconos */
     margin-right: 10px;
 }
 
 .contact-info a {
-    color: #8ae2fe; /* Color de los enlaces */
+    color: #263135; /* Color de los enlaces */
     text-decoration: none;
 }
 
