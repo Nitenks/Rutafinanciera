@@ -536,12 +536,47 @@ header.jumbotron .btn-primary:hover {
 
 /* Parallax Section Styles */
 .parallax {
-    background-image: url('fondoxd.jpeg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    
+    height: 500px;
+    background: linear-gradient(to bottom right, #0f0c29, #302b63, #24243e, #c19ef7, #8ae2fe);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
 }
+
+.parallax::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad según sea necesario */
+    z-index: 1;
+}
+
+.parallax .content {
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 
 /* Ajustes de contenido */
 #about .container {
