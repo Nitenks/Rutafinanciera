@@ -18,6 +18,7 @@ body {
     padding: 0;
     font-family: 'Roboto', Arial, sans-serif;
     overflow-x: hidden;
+    -webkit-overflow-x: hidden; /* Para Safari */
 }
 
 /* Estilos para la sección de contacto */
