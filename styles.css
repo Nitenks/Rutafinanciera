@@ -71,7 +71,7 @@ body {
 }
 
 .btn-primary {
-    background: linear-gradient(to right, #8ae2fe, #c19ef7); /* Gradiente de fondo para botones */
+    background: linear-gradient(to right, #302b63, #0f0c29); /* Gradiente de fondo para botones */
     border: none;
     color: #fff; /* Color del texto del botón */
     border-radius: 5px; /* Bordes redondeados */
